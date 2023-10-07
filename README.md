@@ -43,7 +43,7 @@
 请阅读[ARCHITECTURE.md](https://github.com/shaojintian/Best_README_template/blob/master/ARCHITECTURE.md) 查阅为该项目的架构。
 
 ### 交流群
-
+![image](https://github.com/tt619252615/ant_yht/blob/master/chat.jpg)
 <br />
 
 <p align="center">
