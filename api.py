@@ -226,40 +226,4 @@ class QL:
 
 
  
-if __name__ == "__main__":
-    address = "http://ql.lhw.life/"
-    client_id = "TMJsPln-50aj"
-    client_secret = "jsQ4_oyb7zOE_56wqUT9W-xO"
- 
-    ql = QL(address, client_id, client_secret)
- 
-    envs = ql.getEnvs()
-    # 获取start_time_str
-    print(envs)
-    for env in envs:
-        if env.get('name') == 'start_time_str':
-            start_time_str = env.get('value')
-            print(start_time_str)
-    token = []
-    remarks = []
-    tokens = {}
-    for env in envs:
-            if env.get('name') == 'yht':
-                # token.append(env.get('value'))
-                # 判断是否有备注
-                if env.get('remarks') == None:
-                    id = []                   
-                    id.append(env.get('id')) 
-                    ql.deleteEnvs([176])
-                    print("删除无备注的token")
-                else:
-                    token.append(env.get('value'))
-                    remarks.append(env.get('remarks'))
-                print(env.get('value'))
-                print(env.get('remarks'))
-    print("列表token输出",token)
-    print("列表remarks输出",remarks)
-    for i in range(len(token)):
-        tokens[remarks[i]] = token[i]
-    print(tokens)
  
