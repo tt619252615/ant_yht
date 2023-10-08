@@ -199,16 +199,16 @@ class QL:
         remark ={}
     def push(content):
         PUSH_URL = 'http://www.pushplus.plus/send'
-        push_key = 'eb351af5f30b428bbb58be70ef4bc45b'
+        push_key = push_key,#push_key填自己的 
         topic = '3'
         template = 'json'
         print('开始推送')
         if not push_key:
             print.info('未设置PUSH_KEY，推送失败')
             return
-        # content = '美团红包提醒,ck已经全部删除,可以再次提交了'
+        # content = '红包提醒,ck已经全部删除,可以再次提交了'
         params = {
-            'text': '美团红包提醒',
+            'text': '红包提醒',
             'content': content,
             "template": template,
             'token': push_key,
